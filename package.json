@@ -1,17 +1,33 @@
 {
   "name": "test-lib",
   "version": "1.0.0",
-  "main": "mi-lib-vue.umd.js",
-  "module": "mi-lib-vue.es.js",
-  "types": "types/index.d.ts",
+  "description": "Una librería de componentes Vue 3",
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "main": "./test-lib.umd.js",
+  "module": "./test-lib.es.js",
   "exports": {
     ".": {
-      "import": "./mi-lib-vue.es.js",
-      "require": "./mi-lib-vue.umd.js",
-      "types": "./types/index.d.ts"
+      "import": "./test-lib.es.js",
+      "require": "./test-lib.umd.js"
     }
   },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "peerDependencies": {
-    "vue": "^3.0.0"
+    "vue": "^3.2.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "vue": "^3.2.0",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "typescript": "^5.0.0",
+    "vue-tsc": "^1.8.8"
   }
 }
