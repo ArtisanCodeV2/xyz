@@ -4,8 +4,8 @@
   "description": "Una librería de componentes Vue 3",
   "author": "Tu Nombre",
   "license": "MIT",
-  "main": "./test-lib.umd.js",
-  "module": "./test-lib.es.js",
+  "main": "test-lib.umd.js",
+  "module": "test-lib.es.js",
   "exports": {
     ".": {
       "import": "./test-lib.es.js",
