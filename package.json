@@ -1,0 +1,17 @@
+{
+  "name": "test-lib",
+  "version": "1.0.0",
+  "main": "mi-lib-vue.umd.js",
+  "module": "mi-lib-vue.es.js",
+  "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./mi-lib-vue.es.js",
+      "require": "./mi-lib-vue.umd.js",
+      "types": "./types/index.d.ts"
+    }
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  }
+}
